@@ -14,4 +14,6 @@ public interface IRepository {
 	Model get(String name);
 
 	List<Model> getAll();
+	
+	List<String> getAllNames();
 }
