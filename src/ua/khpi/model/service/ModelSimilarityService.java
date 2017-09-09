@@ -24,6 +24,8 @@ public abstract class ModelSimilarityService implements IModelSimilarityService 
 		this.repository = repository;
 	}
 
+	public abstract double similarity(Set<RDFNode> a, Set<RDFNode> b);
+
 	@Override
 	public List<SimilarModelBean> defineSimilarModels(String pattern) {
 		List<String> names = repository.getAllNames();
